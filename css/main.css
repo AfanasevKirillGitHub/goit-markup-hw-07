@@ -83,7 +83,7 @@ img {
   transition: color var(--time-transition) var(--cubic);
 }
 
-.clients-list__link, .contacts__link, .social-link, .main-form__terms, .header__inner {
+.client-list__link, .contacts__link, .social-link, .main-form__terms, .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,15 +103,22 @@ img {
 .header {
   border-bottom: 1px solid var(--header-border-color);
 }
-.menu {
+
+.header__menu {
   margin-left: 93px;
 }
+
+.header__contacts {
+  margin-left: auto;
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
 }
+
 .menu__link {
   display: block;
   position: relative;
@@ -352,6 +359,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .checkbox__icon {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -459,7 +467,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
   gap: 50px;
 }
 .contacts__link {
@@ -625,6 +632,7 @@ img {
 .features__item:nth-last-child(-n+4) {
   margin-bottom: 0;
 }
+
 .features__icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -640,6 +648,7 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+
 .features__subtitle {
   font-size: 14px;
   line-height: 1.14;
@@ -647,6 +656,7 @@ img {
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
+
 .features__text {
   font-size: 14px;
   line-height: 1.71;
@@ -734,7 +744,8 @@ img {
   display: flex;
   gap: 30px;
 }
-.clients-list__link {
+
+.client-list__link {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -745,15 +756,16 @@ img {
   -webkit-transition: border var(--time-transition) var(--cubic);
   transition: border var(--time-transition) var(--cubic);
 }
-.clients-list__link:hover {
+.client-list__link:hover {
   border-color: var(--accent-color);
 }
-.clients-list__icon {
+
+.client-list__icon {
   fill: var(--icon-color);
   -webkit-transition: fill var(--time-transition) var(--cubic);
   transition: fill var(--time-transition) var(--cubic);
 }
-.clients-list__link:hover .clients-list__icon {
+.clients-list__link:hover .client-list__icon {
   fill: var(--accent-color);
 }
 
